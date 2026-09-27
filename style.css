@@ -1,0 +1,1045 @@
+/* =========================
+GENERAL
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #222;
+    background-color: #f8f7f4;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =========================
+NAVIGATION
+========================= */
+
+nav {
+    min-height: 82px;
+    padding: 15px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white !important;
+    position: relative;
+    z-index: 1000;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.06);
+}
+
+.logo {
+    flex-shrink: 0;
+}
+
+.logo h2 {
+    margin: 0;
+    color: #1d3b36 !important;
+    -webkit-text-fill-color: #1d3b36 !important;
+    font-size: 24px;
+}
+
+.logo span {
+    display: block;
+    margin-top: 3px;
+    color: #b08a45 !important;
+    -webkit-text-fill-color: #b08a45 !important;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.nav-links {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+}
+
+.nav-links a {
+    color: #333;
+    font-size: 14px;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+.nav-links a:hover {
+    color: #b08a45;
+}
+
+
+/* =========================
+HERO
+========================= */
+
+.hero {
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    padding: 90px 10%;
+    background-color: #1d3b36;
+    color: white;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.small-heading,
+.section-heading {
+    color: #b08a45;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.hero h1 {
+    font-size: 64px;
+    line-height: 1.08;
+    margin: 20px 0;
+}
+
+.hero h1 span {
+    display: block;
+    color: #d2ad6d;
+}
+
+.hero-description {
+    max-width: 650px;
+    font-size: 19px;
+    line-height: 1.8;
+    color: #e8e8e8;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 35px;
+}
+
+
+/* =========================
+BUTTONS
+========================= */
+
+.main-button,
+.outline-button,
+.whatsapp-button {
+    display: inline-block;
+    padding: 15px 28px;
+    border-radius: 4px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.main-button {
+    background-color: #b08a45;
+    color: white;
+}
+
+.main-button:hover {
+    background-color: #8f6d34;
+}
+
+.outline-button {
+    border: 1px solid white;
+    color: white;
+}
+
+.outline-button:hover {
+    background-color: white;
+    color: #1d3b36;
+}
+
+.whatsapp-button {
+    background-color: #1d3b36;
+    color: white;
+}
+
+.whatsapp-button:hover {
+    background-color: #142a27;
+}
+
+
+/* =========================
+INTRO
+========================= */
+
+.intro {
+    padding: 0 8%;
+    margin-top: -50px;
+    position: relative;
+    z-index: 5;
+}
+
+.intro-box {
+    background-color: white;
+    padding: 35px 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.intro-box h2 {
+    margin: 0 0 8px;
+    color: #1d3b36;
+}
+
+.intro-box p {
+    margin: 0;
+    color: #666;
+    line-height: 1.6;
+}
+
+
+/* =========================
+ABOUT
+========================= */
+
+.about {
+    padding: 110px 10%;
+    display: flex;
+    gap: 80px;
+    align-items: center;
+}
+
+.about-content {
+    flex: 1;
+}
+
+.about h2 {
+    color: #1d3b36;
+    font-size: 42px;
+    line-height: 1.2;
+    margin: 15px 0 25px;
+}
+
+.about p:not(.section-heading) {
+    color: #666;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.about-highlight {
+    width: 350px;
+    background-color: #1d3b36;
+    padding: 35px;
+    color: white;
+    flex-shrink: 0;
+}
+
+.about-highlight div {
+    padding: 18px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.about-highlight div:last-child {
+    border-bottom: none;
+}
+
+.about-highlight span {
+    color: #d2ad6d;
+    font-size: 13px;
+}
+
+.about-highlight h3 {
+    margin: 7px 0;
+    font-size: 20px;
+}
+
+.about-highlight p {
+    margin: 0;
+    color: #ccc;
+    font-size: 14px;
+}
+
+
+/* =========================
+SERVICES
+========================= */
+
+.services {
+    padding: 100px 8%;
+    text-align: center;
+    background-color: #f0eee8;
+}
+
+.services h2,
+.locations h2,
+.team h2,
+.process h2,
+.contact h2,
+.requirement h2 {
+    color: #1d3b36;
+    font-size: 42px;
+    margin: 12px 0 15px;
+}
+
+.section-description {
+    color: #666;
+    max-width: 650px;
+    margin: 0 auto 50px;
+    line-height: 1.7;
+}
+
+.service-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.service-card {
+    padding: 35px 25px;
+    background-color: white;
+    text-align: left;
+    border: 1px solid #eee;
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.service-icon {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    color: #1d3b36;
+}
+
+.service-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+
+/* =========================
+LOCATIONS
+========================= */
+
+.locations {
+    padding: 100px 8%;
+    text-align: center;
+}
+
+.location-cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.location-card {
+    width: 280px;
+    padding: 40px 25px;
+    background-color: white;
+    border: 1px solid #e6e2d9;
+    text-align: left;
+}
+
+.location-card span {
+    color: #b08a45;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.location-card h3 {
+    color: #1d3b36;
+    font-size: 26px;
+    margin: 15px 0 5px;
+}
+
+.location-card p {
+    color: #777;
+    margin: 0;
+}
+
+
+/* =========================
+WHY US
+========================= */
+
+.why-us {
+    padding: 100px 10%;
+    background-color: #1d3b36;
+    color: white;
+    display: flex;
+    gap: 70px;
+}
+
+.why-content {
+    flex: 1;
+}
+
+.why-content h2 {
+    font-size: 42px;
+    line-height: 1.2;
+    margin: 15px 0 25px;
+}
+
+.why-content p:not(.section-heading) {
+    color: #ddd;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.why-points {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.why-points div {
+    padding: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.why-points strong {
+    color: #d2ad6d;
+}
+
+.why-points h3 {
+    margin-bottom: 8px;
+}
+
+.why-points p {
+    color: #ccc;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+
+/* =========================
+PROCESS
+========================= */
+
+.process {
+    padding: 100px 8%;
+    text-align: center;
+}
+
+.process-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 50px auto 0;
+}
+
+.process-card {
+    padding: 30px 20px;
+    background-color: white;
+    border: 1px solid #e8e5de;
+}
+
+.process-card span {
+    display: inline-flex;
+    width: 42px;
+    height: 42px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #1d3b36;
+    color: white;
+    font-size: 13px;
+}
+
+.process-card h3 {
+    color: #1d3b36;
+    line-height: 1.4;
+}
+
+.process-card p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+
+/* =========================
+TEAM
+========================= */
+
+.team {
+    padding: 100px 8%;
+    text-align: center;
+    background-color: #f0eee8;
+}
+
+.team-cards {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    max-width: 900px;
+    margin: 50px auto 0;
+}
+
+.manager-card {
+    width: 380px;
+    background-color: white;
+    text-align: left;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+}
+
+.manager-image {
+    width: 100%;
+    height: 360px;
+    background-color: #d8d3c8;
+    overflow: hidden;
+}
+
+.manager-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.manager-info {
+    padding: 25px;
+}
+
+.manager-info h3 {
+    color: #1d3b36;
+    font-size: 25px;
+    margin: 0 0 7px;
+}
+
+.manager-role {
+    color: #b08a45;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.manager-info p:last-child {
+    color: #666;
+    line-height: 1.6;
+}
+
+
+/* =========================
+REQUIREMENT FORM
+========================= */
+
+.requirement {
+    padding: 100px 8%;
+    display: flex;
+    gap: 70px;
+    align-items: flex-start;
+    background-color: white;
+}
+
+.requirement-content {
+    flex: 1;
+    padding-top: 20px;
+}
+
+.requirement-content h2 {
+    font-size: 42px;
+    line-height: 1.2;
+}
+
+.requirement-content p:not(.section-heading) {
+    color: #666;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.requirement-form {
+    flex: 1;
+    padding: 35px;
+    background-color: #f8f7f4;
+    border: 1px solid #e5e1d8;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.form-row input,
+.form-row select,
+.requirement-form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: white;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    min-width: 0;
+}
+
+.requirement-form textarea {
+    resize: vertical;
+    margin-bottom: 15px;
+}
+
+.requirement-form button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background-color: #1d3b36;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.requirement-form button:hover {
+    background-color: #142a27;
+}
+
+
+/* =========================
+CONTACT
+========================= */
+
+.contact {
+    padding: 100px 20px;
+    text-align: center;
+    background-color: #eeeae2;
+}
+
+.contact p:not(.section-heading) {
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+
+/* =========================
+FOOTER
+========================= */
+
+footer {
+    background-color: #142a27;
+    color: white;
+    padding: 60px 8% 25px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 60px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.footer-content h3 {
+    color: #d2ad6d;
+    font-size: 22px;
+}
+
+.footer-content h4 {
+    color: white;
+}
+
+.footer-content p {
+    color: #bbb;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.footer-content a {
+    display: block;
+    color: #bbb;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.footer-content a:hover {
+    color: #d2ad6d;
+}
+
+.footer-bottom {
+    margin-top: 45px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #888;
+    font-size: 13px;
+}
+
+
+/* =========================
+TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    nav {
+        min-height: 75px;
+        padding: 15px 25px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .hero {
+        padding: 80px 25px;
+    }
+
+    .hero h1 {
+        font-size: 46px;
+    }
+
+    .intro-box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .about,
+    .why-us,
+    .requirement {
+        flex-direction: column;
+    }
+
+    .about-highlight {
+        width: 100%;
+    }
+
+    .service-cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .process-cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .team-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .manager-card {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+/* =========================
+MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    /* NAVIGATION */
+
+    nav {
+        min-height: 72px;
+        padding: 14px 18px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        background-color: white !important;
+    }
+
+    .logo {
+        text-align: center;
+        width: 100%;
+    }
+
+    .logo h2 {
+        margin: 0;
+        font-size: 20px;
+        line-height: 1.2;
+        color: #1d3b36 !important;
+        -webkit-text-fill-color: #1d3b36 !important;
+    }
+
+    .logo span {
+        font-size: 9px;
+        letter-spacing: 1.5px;
+        color: #b08a45 !important;
+        -webkit-text-fill-color: #b08a45 !important;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        min-height: auto;
+        padding: 75px 22px 80px;
+        text-align: left;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+        line-height: 1.12;
+        margin: 18px 0;
+    }
+
+    .hero-description {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+    }
+
+    .main-button,
+    .outline-button,
+    .whatsapp-button {
+        width: 100%;
+        text-align: center;
+        padding: 14px 20px;
+    }
+
+
+    /* INTRO */
+
+    .intro {
+        padding: 0 18px;
+        margin-top: -35px;
+    }
+
+    .intro-box {
+        padding: 28px 22px;
+        gap: 20px;
+    }
+
+    .intro-box h2 {
+        font-size: 25px;
+    }
+
+
+    /* GENERAL SECTIONS */
+
+    .about,
+    .services,
+    .locations,
+    .why-us,
+    .process,
+    .team,
+    .requirement,
+    .contact {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    .about {
+        padding-left: 22px;
+        padding-right: 22px;
+        gap: 35px;
+    }
+
+    .about h2,
+    .why-content h2 {
+        font-size: 32px;
+    }
+
+
+    /* SERVICES */
+
+    .services {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .service-cards {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+
+    /* LOCATIONS */
+
+    .locations {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .location-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .location-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+
+    /* WHY US */
+
+    .why-us {
+        padding-left: 22px;
+        padding-right: 22px;
+        gap: 35px;
+    }
+
+    .why-points {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+
+    /* PROCESS */
+
+    .process {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .process-cards {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        margin-top: 35px;
+    }
+
+
+    /* TEAM */
+
+    .team {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .manager-card {
+        width: 100%;
+    }
+
+    .manager-image {
+        height: 320px;
+    }
+
+
+    /* REQUIREMENT */
+
+    .requirement {
+        padding-left: 18px;
+        padding-right: 18px;
+        gap: 35px;
+    }
+
+    .requirement-content h2 {
+        font-size: 32px;
+    }
+
+    .requirement-form {
+        width: 100%;
+        padding: 22px;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+
+    /* CONTACT */
+
+    .contact {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .contact h2 {
+        font-size: 32px;
+    }
+
+    .contact-buttons {
+        flex-direction: column;
+        width: 100%;
+        max-width: 350px;
+        margin: auto;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        padding: 50px 22px 20px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .footer-bottom {
+        margin-top: 30px;
+    }
+}
+
+
+/* =========================
+EXTRA SMALL PHONES
+========================= */
+
+@media (max-width: 380px) {
+
+    .logo h2 {
+        font-size: 18px;
+        color: #1d3b36 !important;
+        -webkit-text-fill-color: #1d3b36 !important;
+    }
+
+    .logo span {
+        color: #b08a45 !important;
+        -webkit-text-fill-color: #b08a45 !important;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .services h2,
+    .locations h2,
+    .team h2,
+    .process h2,
+    .contact h2,
+    .requirement h2 {
+        font-size: 30px;
+    }
+}
